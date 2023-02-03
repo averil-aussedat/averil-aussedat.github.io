@@ -55,7 +55,8 @@ nav {
 
 nav p.name {
     text-align: center;
-    font-family: "Palatino", Arial, Serif;
+    /* font-family: "Palatino", Arial, Serif; */
+    font-family: 'URW Chancery', sans-serif;
     font-size: 3rem;
 }
 
