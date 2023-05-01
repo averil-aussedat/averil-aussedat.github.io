@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles.css">
     <title>Presentations</title>
   </head>
+
+  <script type="text/javascript" src="scripts.js"></script>
+
   <body>
 
     <nav>
@@ -41,13 +45,17 @@
                 </math>
             </div>
             <div class="occasion">GdT Optimisation & contrôle, LMI</div>
-            <div class="file"><a href="files/presentations/BPviscosity.pdf">Slides</a></div>
+            <div class="file"><a href="files/presentations/BPviscosity.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesQITNS')">Abstract</button></div>
+            <div id="slidesQITNS" class="abstract" onclick="toggleVisibility('slidesQITNS')">The generalization of viscosity theory to control problems over Wasserstein space is an active topic. This talk will focus on some advances in the direction of test functions. We introduce the Hamilton-Jacobi approach to control problems in a general context in order to highlight the intuition behind it, then decline it in the Wasserstein context. We discuss how to overcome two of the arising difficulties by adapting the notion of viscosity. This allows us to obtain some results of comparison and uniqueness of the solution of a suitable HJ equation.</div>
         </p>
 
         <p class="slides">
             <div class="title">Ekeland: A beginner's point of view on some variational principles</div>
             <div class="occasion">LMI/LMRS doctoral seminar</div>
-            <div class="file"><a href="files/presentations/ekeland.pdf">Slides</a></div>
+            <div class="file"><a href="files/presentations/ekeland.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesEke')">Abstract</button></div>
+            <div id="slidesEke" class="abstract" onclick="toggleVisibility('slidesEke')">The first question of optimization is whether some function admits a minimum over some space. The family of Ekeland principles adresses the question "what can we say when there is no minimum?" This talk will present the original principle and some variants in an elementary fashion, with hope to highlight the power of this elegant theory.</div>
         </p>
 
         <h2>2022</h2>
@@ -55,13 +63,17 @@
         <p class="slides">
             <div class="title">The simple beauty of the eikonal equation</div>
             <div class="occasion">LMI/LMRS doctoral seminar</div>
-            <div class="file"><a href="files/presentations/eikonale.pdf">Slides</a></div>
+            <div class="file"><a href="files/presentations/eikonale.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesEik')">Abstract</button></div>
+            <div id="slidesEik" class="abstract" onclick="toggleVisibility('slidesEik')">In its simplest form, the eikonal equation reads |u’| = 1. The right notion of solution seems to be viscosity solutions, that are, in a sense, maximal. This remark opens on an analytical method of resolution very close to the spectral decomposition of linear operators, and highlights the deep connection between viscosity and control problems.</div>
         </p>
 
         <!-- <p class="slides">
             <div class="title">yadda</div>
             <div class="occasion">yadda</div>
-            <div class="file"><a href="files/presentations/yadda">Slides</a></div>
+            <div class="file"><a href="files/presentations/yadda">Slides</a>, 
+            <button class="abstractButton" onclick"toggleVisibility('slidesYadda')">Abstract</button></div>
+            <div id="slidesYadda" class=abstract" onclick="toggleVisibility('slidesYadda')">This is the abstract</div>
         </p> -->
 
     </main>

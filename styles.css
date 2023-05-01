@@ -23,6 +23,7 @@
     --main-color: #111;
     --light-color: #222;
     --light-color-hover: #333;
+    --other-light-color: #19a;
     --link-color: #2ee;
     --text-color: #eee;
     /* sizes */
@@ -132,6 +133,28 @@ main {
 
 .title {
     text-decoration: underline;
+}
+
+.abstractButton {
+    background-color: var(--other-light-color);
+    border: none;
+    font-size: inherit;
+    font-weight: bold; 
+    font-family: Verdana, serif;
+    color: var(--main-color);
+    padding: 0.1rem 0.4rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.abstract {
+    border-left: 0.4rem solid var(--light-color-hover);
+    padding-left: 0.6rem;
+    margin-top: 0.4rem;
+    font-style: italic;
+    display: none;
+    max-width: 60%;
 }
 
 .authors, .occasion {
