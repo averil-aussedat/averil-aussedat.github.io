@@ -166,7 +166,7 @@ main {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.hal, .file  {
+.hal, .file, .published  {
     font-family: Verdana, serif;
     font-stretch: extra-expanded;
 }
