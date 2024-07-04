@@ -30,6 +30,20 @@
     --nav-width: 24em;
 }
 
+/* Local fonts */
+@font-face {
+    font-family: "AbrilFatFace";
+    src: url("fonts/AbrilFatface-Regular.ttf");
+}
+@font-face {
+    font-family: "Galileo-Bold";
+    src: url("fonts/GalileoFLF-Bold.ttf");
+}
+@font-face {
+    font-family: "Quando";
+    src: url("fonts/Quando-Regular.ttf");
+}
+
 a, a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: var(--link-color);
@@ -74,7 +88,10 @@ nav {
 nav p.name {
     text-align: center;
     /* font-family: "Palatino", Arial, Serif; */
-    font-family: 'URW Chancery', sans-serif;
+    /* font-family: "Calisto MT", 'Lucida Bright', sans-serif; */
+    /* font-family: "AbrilFatface", serif; */
+    /* font-family: "Galileo-Bold", serif; */
+    font-family: "Quando", serif;
     font-size: 3rem;
 }
 
