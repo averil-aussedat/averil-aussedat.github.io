@@ -101,6 +101,7 @@ nav p.name {
     /* font-family: "Galileo-Bold", serif; */
     font-family: "Quando", serif;
     font-size: 3rem;
+    line-height: 3rem;
 }
 
 nav p.mail {
