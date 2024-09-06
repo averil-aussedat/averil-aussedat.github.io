@@ -115,8 +115,10 @@ nav p.name {
     /* font-family: "Galileo-Bold", serif; */
     font-family: "Quando", serif;
     font-size: 3rem;
-    /* line-height: 3rem;  */
-    line-height: 1.5rem; 
+    line-height: 3rem; 
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    /* line-height: 1.5rem;  */
 }
 
 nav p.mail {
@@ -126,6 +128,8 @@ nav p.mail {
     /* font-family: 'URW Chancery', sans-serif; */
     font: 1em/150% "Gentium", Helvetica, Arial, sans-serif;
     font-size: 1.5rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /* nav p.desc {
