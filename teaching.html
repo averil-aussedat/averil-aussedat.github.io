@@ -31,6 +31,36 @@
         <ul>
             <li><a href="files/teaching/MNEDP.pdf" style="display: inline">Poly</a> (version du 05/04/25)</li>
         </ul>
+
+        <br>
+        <h2>Troisième et dernière énigme</h2>
+
+        Déchiffre l'image... 
+        <br><br>
+
+        <div class="box">
+            <img src="images/rebus.png" width="800" class="contain">
+        </div>
+
+        <br>
+        <form>
+        <label for="pswd">Réponse :</label>
+        <input type="text" id="pswd">
+        <input type="button" value="Clique ici pour vérifier" onclick="checkPswd();" />
+        <p id="reponse"></p>
+        </form>
+        <!--Function to check password-->
+        <script type="text/javascript">
+            function checkPswd() {
+                var password = document.getElementById("pswd").value;
+                if (password == "marconi" || password == "Marconi" || password == "MARCONI") {
+                    document.getElementById("reponse").innerHTML = "Bravooooo !!! Tu as bien mérité le trésor : <a href=\"images/pourpapa.png\">clique ici</a> :)";
+                }
+                else{
+                    document.getElementById("reponse").innerHTML = "Essaie encore...";
+                }
+            }
+        </script>
     </main>
 </body>
 </html>
