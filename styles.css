@@ -21,14 +21,13 @@
 :root {
     /* colors */
     --main-color: #111; /* Background */
-    --light-color: #222; /* Navigation bar */
-    --light-color-hover: #333;
-    --other-light-color: #19a;
+    --light-color: #333; /* Button bars */
+    --other-light-color: #19a; /* Abstract buttons */
     --link-color: #2ee;
+    --text-color-dark: #b9f1f8; 
     --text-color: #eee;
-    /* sizes */
-    /* --nav-width: 24em; */
-    --nav-width: 20%;
+    /* Source https://codepen.io/stephen1on1/pen/VeyNZo */
+    --bg-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBgYGHh4d5eXlzc3OLi4ubm5uVlZWPj4+NjY19fX2JiYl/f39ra2uRkZGZmZlpaWmXl5dvb29xcXGTk5NnZ2c8TV1mAAAAG3RSTlNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAvEOwtAAAFVklEQVR4XpWWB67c2BUFb3g557T/hRo9/WUMZHlgr4Bg8Z4qQgQJlHI4A8SzFVrapvmTF9O7dmYRFZ60YiBhJRCgh1FYhiLAmdvX0CzTOpNE77ME0Zty/nWWzchDtiqrmQDeuv3powQ5ta2eN0FY0InkqDD73lT9c9lEzwUNqgFHs9VQce3TVClFCQrSTfOiYkVJQBmpbq2L6iZavPnAPcoU0dSw0SUTqz/GtrGuXfbyyBniKykOWQWGqwwMA7QiYAxi+IlPdqo+hYHnUt5ZPfnsHJyNiDtnpJyayNBkF6cWoYGAMY92U2hXHF/C1M8uP/ZtYdiuj26UdAdQQSXQErwSOMzt/XWRWAz5GuSBIkwG1H3FabJ2OsUOUhGC6tK4EMtJO0ttC6IBD3kM0ve0tJwMdSfjZo+EEISaeTr9P3wYrGjXqyC1krcKdhMpxEnt5JetoulscpyzhXN5FRpuPHvbeQaKxFAEB6EN+cYN6xD7RYGpXpNndMmZgM5Dcs3YSNFDHUo2LGfZuukSWyUYirJAdYbF3MfqEKmjM+I2EfhA94iG3L7uKrR+GdWD73ydlIB+6hgref1QTlmgmbM3/LeX5GI1Ux1RWpgxpLuZ2+I+IjzZ8wqE4nilvQdkUdfhzI5QDWy+kw5Wgg2pGpeEVeCCA7b85BO3F9DzxB3cdqvBzWcmzbyMiqhzuYqtHRVG2y4x+KOlnyqla8AoWWpuBoYRxzXrfKuILl6SfiWCbjxoZJUaCBj1CjH7GIaDbc9kqBY3W/Rgjda1iqQcOJu2WW+76pZC9QG7M00dffe9hNnseupFL53r8F7YHSwJWUKP2q+k7RdsxyOB11n0xtOvnW4irMMFNV4H0uqwS5ExsmP9AxbDTc9JwgneAT5vTiUSm1E7BSflSt3bfa1tv8Di3R8n3Af7MNWzs49hmauE2wP+ttrq+AsWpFG2awvsuOqbipWHgtuvuaAE+A1Z/7gC9hesnr+7wqCwG8c5yAg3AL1fm8T9AZtp/bbJGwl1pNrE7RuOX7PeMRUERVaPpEs+yqeoSmuOlokqw49pgomjLeh7icHNlG19yjs6XXOMedYm5xH2YxpV2tc0Ro2jJfxC50ApuxGob7lMsxfTbeUv07TyYxpeLucEH1gNd4IKH2LAg5TdVhlCafZvpskfncCfx8pOhJzd76bJWeYFnFciwcYfubRc12Ip/ppIhA1/mSZ/RxjFDrJC5xifFjJpY2Xl5zXdguFqYyTR1zSp1Y9p+tktDYYSNflcxI0iyO4TPBdlRcpeqjK/piF5bklq77VSEaA+z8qmJTFzIWiitbnzR794USKBUaT0NTEsVjZqLaFVqJoPN9ODG70IPbfBHKK+/q/AWR0tJzYHRULOa4MP+W/HfGadZUbfw177G7j/OGbIs8TahLyynl4X4RinF793Oz+BU0saXtUHrVBFT/DnA3ctNPoGbs4hRIjTok8i+algT1lTHi4SxFvONKNrgQFAq2/gFnWMXgwffgYMJpiKYkmW3tTg3ZQ9Jq+f8XN+A5eeUKHWvJWJ2sgJ1Sop+wwhqFVijqWaJhwtD8MNlSBeWNNWTa5Z5kPZw5+LbVT99wqTdx29lMUH4OIG/D86ruKEauBjvH5xy6um/Sfj7ei6UUVk4AIl3MyD4MSSTOFgSwsH/QJWaQ5as7ZcmgBZkzjjU1UrQ74ci1gWBCSGHtuV1H2mhSnO3Wp/3fEV5a+4wz//6qy8JxjZsmxxy5+4w9CDNJY09T072iKG0EnOS0arEYgXqYnXcYHwjTtUNAcMelOd4xpkoqiTYICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==);
 }
 
 /* Local fonts */
@@ -54,63 +53,55 @@ li a {
     display: block; /* make links in list be cliquable as blocks (and not just the very text of the link */
 }
 
-h1 {
-    font-family: "Quando", serif;
-    /* line-height: 1.5em; */
-    padding-bottom: 0.5em;
+/* General body settings */
+
+html {
+    height: 200%;
 }
 
 h2 {
     font-size: larger;
-}
-
-/* General body settings */
-
-html {
-    height: 100%;
+    color: var(--text-color-dark);
 }
 
 body {
     /* font: 1em/150% Helvetica, Arial, sans-serif; */
     /* font: 1em/150% "Charter BT", Arial, sans-serif; */
     font: 1em/150% "Gentium", Helvetica, Arial, sans-serif;
-    padding: 2em;
-    padding-top: 1em;
-    margin: 0 0 0 var(--nav-width); 
-    /* max-width: 100em; */
+    /* top right bottom left */
+    margin: 1em 1em 0 1em; 
     background-color: var(--main-color);
     color: var(--text-color);
-    display: flex;
     min-height: 100%;  
+    background-image: var(--bg-image);
 }
 
-body, nav {
-    /* Source https://codepen.io/stephen1on1/pen/VeyNZo */
-    background-image: url(data:image/png;base64,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);
+main {
+    font-size: 1.2rem;
+    padding-bottom: 2em;
 }
 
-/* Navigation bar */
+/* Top part */
 
-nav {
-    /* height: auto; */
-    /* height: max-content; */
-    /* height: initial; */
-    /* height: 100vh; */
-    height: 100%;
-    /* flex: 1; */
-    position: fixed;
-    background-color: var(--light-color);
-    margin: 0em;
-    padding: 0em;
-    top: 0em;
-    /* bottom: 0; */
-    left: 0em;
-    width: var(--nav-width);
-    /* width: 20%; */
+.image-left {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: 1em;
+    width: 20em;
+    max-width: 50%;
 }
 
-nav p.name {
-    text-align: center;
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+li {
+    padding-bottom: 0.3em;
+}
+
+p.name {
+    /* text-align: center; */
     /* font-family: "Palatino", Arial, Serif; */
     /* font-family: "Calisto MT", 'Lucida Bright', sans-serif; */
     /* font-family: "AbrilFatface", serif; */
@@ -118,14 +109,15 @@ nav p.name {
     font-family: "Quando", serif;
     /* font-size: 3rem; */
     font-size: 150%;
-    line-height: 3rem; 
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    line-height: 3rem;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; 
+    margin-top: 0em;
+    margin-bottom: 0em;
     /* line-height: 1.5rem;  */
 }
 
-nav p.mail {
-    text-align: center;
+p.mail {
     /* font-family: "Lucida Console", Courier, monospace; */
     /* font-family: "Quando", serif; */
     /* font-family: 'URW Chancery', sans-serif; */
@@ -136,58 +128,46 @@ nav p.mail {
     margin-bottom: 0.5em;
 }
 
-/* nav p.desc {
-    text-align: center;
-    font-family: "Arial narrow", sans-serif;
-    font-size: 1.4rem;
-} */
+/* Sections */
 
-nav ul {
-    /* font-family: 'URW Chancery', sans-serif; */
-    font: 1em/150% "Gentium", Helvetica, Arial, sans-serif;
-    /* font-family: sans-serif; */
-    /* font-size: 2rem; */
-    font-size: 130%;
-    line-height: 1.2;
-    list-style-type: none;
-    margin: 0em;
-    padding: 0em;
-    /* display: block;  */
-}
-
-nav ul li { /* list elements inside an Unordered List inside the nav bar */
-    text-decoration: none;
-    display: block; 
-}
-
-nav ul li a {
-    padding: 1rem 1rem 1rem 3rem;
-}
-
-nav ul li.active {
-    border-right: 0.4rem solid var(--link-color);
-    /* border-left-color: var(--link-color);
-    border-left-width: 1em; */
-}
-
-nav ul li:hover { 
-    background-color: var(--light-color-hover);
+.switchButton {
+    font-family: 1em/150% "Quando", serif;
     font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0.8em;
+    width: 18.4em;
+    max-width: 50%;
+    /* width: fit-content; */
+    display: inline-block;
+    color: var(--text-color);
+    background-color: var(--light-color);
+    background-image: var(--bg-image);
 }
 
-nav div img { /* make the personal image fit the width of the navigation bar */
-    max-width: 100%; 
+.sectionButton {
+    font-family: 1em/150% "Quando", serif;
+    text-align: left;
+    width: 100%;
+    padding: 0.5em;
+    background-color: var(--light-color);
+    background-image: var(--bg-image);
 }
 
-/* Styling the lists */
-
-main {
-    font-size: 1.2rem;
+.caret {
+    content: url("images/caret.svg");
+    width: 0.5em;
+    margin-top: -0.3em;
+    margin-bottom: -0.2em;
+    margin-left: 0em;
+    margin-right: 0.4em;
 }
 
-/* .title {
-    text-decoration: underline;
-} */
+div.sectioncontent { /* Hide sections by default */
+    display: none;
+}
+
+/* Presentations */
 
 .abstractButton {
     background-color: var(--other-light-color);
@@ -196,32 +176,49 @@ main {
     font-weight: bold; 
     font-family: Verdana, serif;
     color: var(--main-color);
-    padding: 0.1rem 0.4rem;
+    padding: 0rem 0.4rem;
+    margin-left: 0.2em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
 }
 
 .abstract {
-    /* border-left: 0.4rem solid var(--light-color-hover); */
     border-left: 0.4rem solid var(--other-light-color);
     padding-left: 0.6rem;
-    margin-top: 0.4rem;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0;
     font-style: italic;
     display: none;
     max-width: 60%;
 }
 
-.authors, .occasion {
-    font-style: italic;
-    padding-bottom: 0.2rem;
+.article, .slides, .poster {
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 
-.arxiv{
+.authors, .occasion {
+    font-style: italic;
+    padding-left: 0.4em;
+}
+
+.authors::before {
+    content: "with ";
+}
+
+.arxiv {
     font-family: 'Courier New', Courier, monospace;
 }
 
 .hal, .file, .published  {
     font-family: Verdana, serif;
     font-stretch: extra-expanded;
+}
+
+.arxiv, .hal, .file, .published {
+    padding-left: 0.4em;
 }

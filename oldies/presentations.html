@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Presentations</title>
+  </head>
+
+  <script type="text/javascript" src="scripts.js"></script>
+
+  <body>
+    <nav>
+        <div class="box">
+            <img src="images/myself.jpg" alt="personal picture" class="contain">
+        </div>
+        <p class="name">Averil Aussedat</p>
+        <p class="mail">averil&#8228;aussedat[at]gmail&#8228;com</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="publications.html">[Pre]publications</a></li>
+            <li class="active"><a href="presentations.html">Presentations</a></li>
+            <!-- <li><a href="teaching.html">Teaching</a></li> -->
+            <!-- <li><a href="https://github.com/averil-aussedat" target="_blank">GitHub</a></li> -->
+        </ul>
+    </nav>
+
+    <main>
+
+        <h2>2026</h2>
+
+        <p class="slides">
+            <div class="title">A geometric question arising in Hamilton-Jacobi-Bellman equations in <math>&Pscr;<sub>2</sub></div>
+            <div class="occasion">Nanjing Colloquium on Probability and PDE</div>
+            <div class="file"><a href="files/presentations/geomP2.pdf">Slides</a>,
+            <button class="abstractButton" onclick="toggleVisibility('slidesGeomP2')">Abstract</button></div>
+            <div id="slidesGeomP2" class="abstract" onclick="toggleVisibility('slidesGeomP2')">When defining viscosity solutions in the Wasserstein space, one most often relies on an infinitesimal representation of some well-chosen test functions - by gradients, metric scalar products, directional derivatives, etc. It is geometrically appealing to consider the Alexandrov tangent cone as the set of directions on which these objects should act. However, in many cases of interest, the PDE problem is set on directions that do not belong to the Alexandrov tangent cone. We provide an estimate that allows to solve this issue if one considers the regular tangent cone, and comment on the problems appearing outside of this assumption.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Some recent developments in Wasserstein geometry</div>
+            <div class="occasion">Analysis seminar, SISSA</div>
+            <div class="file"><a href="files/presentations/recentWG.pdf">Slides</a>,
+            <button class="abstractButton" onclick="toggleVisibility('slidesRecentWG')">Abstract</button></div>
+            <div id="slidesRecentWG" class="abstract" onclick="toggleVisibility('slidesRecentWG')">The Wasserstein space is an example of an infinite-dimensional space with curvature bounded from below which consistently defies the intuition coming from Hilbert spaces. We review some classical and more recent aspects of the large-scale geometry of this space. At small scales, the situation is much better: not only the tangent cone to a measure can be given a "pseudo-Hilbertian" structure, but it splits in two orthogonal factors, one determined by the global repartition of mass of the given measure, and the second one being local. We show that the latter can be computed based on a decomposition of the underlying measure, and comment on the problems arising when passing from global to local scales. Lastly, we draw some connections (and differences) with tangent cones introduced by Bouchitté and Alberti-Marchese, which are arguably correct analogues for the Kantorovich-Rubinstein norm.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Optimal control and HJB equations in non-positively curved spaces</div>
+            <div class="occasion">Séminaire d'Analyse Numérique de l'IRMAR, Rennes</div>
+            <div class="file"><a href="files/presentations/optHJ.pdf">Slides</a>,
+            <button class="abstractButton" onclick="toggleVisibility('slidesOptHJ')">Abstract</button></div>
+            <div id="slidesOptHJ" class="abstract" onclick="toggleVisibility('slidesOptHJ')">The euclidean space, the Poincaré disk and networks (without loops) are all non-positively curved spaces, in the sense that the squared distance to any given point is semiconvex. By relying only on this property, one can develop a theory of differentiation and Hamilton-Jacobi partial differential equations, that extends the results of Hilbert spaces and still provides existence and comparison results. In this talk, we focus on the PDEs connected with optimal control: we propose a way to define control problems at the level of non-positively curved spaces, and show that it is consistent with the existing theory of viscosity solutions in such spaces. Some numerical illustrations are given. This is based on joint works with Othmane Jerhaoui and Hasnaa Zidani.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Second blow-ups of squared Wasserstein distances in dimension one</div>
+            <div class="occasion">SMAI MODE Days 2026, Nice</div>
+            <div class="file"><a href="files/presentations/edgecases.pdf">Slides</a>,
+            <button class="abstractButton" onclick="toggleVisibility('slidesEdgeCases')">Abstract</button></div>
+            <div id="slidesEdgeCases" class="abstract" onclick="toggleVisibility('slidesEdgeCases')">The squared Wasserstein distance is directionally differentiable in any "measure" direction, and the explicit expression of the directional derivative is known. In some simple cases, the expression of the second directional derivative can also be computed quite easily. We are interested in the remaining cases; we show that the second order directional derivative might not exist, and that the value of its upper limit is tightly linked to the concentration of the base measure on some specific porous sets.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Weird measures near the edges of Otto's manifold in dimension one</div>
+            <div class="occasion">OT in GMT - GMT in OT, Padova</div>
+            <div class="file"><a href="files/presentations/weirdmeas.pdf">Notes</a>,
+            <button class="abstractButton" onclick="toggleVisibility('slidesWeirdmeas')">Abstract</button></div>
+            <div id="slidesWeirdmeas" class="abstract" onclick="toggleVisibility('slidesWeirdmeas')">It is natural to conjecture that elements of the Wasserstein tangent cones are characterized by the initial speed of the curve that they induce. This is indeed true in many cases, but counterexamples exist. In this talk, we identify the 1D measures on which the characterization fails.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Locality of the centred Wasserstein tangent cone</div>
+            <div class="occasion">Joint UNIPI-SNS Geometric Analysis seminar</div>
+            <div class="file"><a href="files/presentations/locality.pdf">Notes</a>,
+            <button class="abstractButton" onclick="toggleVisibility('slidesLocality')">Abstract</button></div>
+            <div id="slidesLocality" class="abstract" onclick="toggleVisibility('slidesLocality')">Wasserstein geodesics in the space of measures are minimizing an integral cost, that is, a global compromise between local contributions. We show that a particular subset of geodesics is instead characterized by a local condition, which is linked to a decomposition of the initial measure in pieces of "constant dimension". This has already been observed in smooth cases by Lott, and justified using PDEs: our argument is almost only based on convex analysis, and does not need restriction on the measure.</div>
+        </p>
+
+        <h2>2025</h2>
+
+        <p class="slides">
+            <div class="title">Decomposition of a measure according to Wasserstein tangent cones</div>
+            <div class="occasion">Séminaire MAA, Toulon</div>
+            <div class="file"><a href="files/presentations/decomp.pdf">Slides</a>,
+            <button class="abstractButton" onclick="toggleVisibility('slidesDecomp')">Abstract</button></div>
+            <div id="slidesDecomp" class="abstract" onclick="toggleVisibility('slidesDecomp')">A probability measure can be transported to another measure through the optimal transport plans achieving the Wasserstein distance. These plans might be deterministic or split mass : we show that the first measure can be decomposed in d+1 parts, each allowing (martingale) optimal plans to split mass in a fixed number of directions, from 0 to d. In addition, the directions of splitting are orthogonal to some sets over which the measure is concentrated, each being covered by c-c hypersurfaces of a fixed dimension.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Local characterization of tangent plans that are martingale plans</div>
+            <div class="occasion">NewOT workshop, Orsay</div>
+            <div class="file"><a href="files/presentations/locchar.pdf">Slides</a>,
+            <button class="abstractButton" onclick="toggleVisibility('slidesLocchar')">Abstract</button></div>
+            <div id="slidesLocchar" class="abstract" onclick="toggleVisibility('slidesLocchar')">Lott showed that if mu is the Hausdorff measure on a C2 submanifold, then the optimal transport plans that are martingale plans can split mass only in the normal directions to the manifold. This talk provides the generalization of this result to any measure with finite second moment : given a measure, we identify d+1 sets behaving as k-dimensional DC manifolds, and show that if an optimal transport plan with first marginal mu is, additionally, a martingale plan, then it must be concentrated on the normal directions to these sets. A converse is given if one allows the plans to be merely tangent, i.e. limits of optimal plans in L2(mu).</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Optimal control problems and Hamilton-Jacobi-Bellman equations in some curved metric spaces</div>
+            <div class="occasion">Thesis defense</div>
+            <div class="file"><a href="files/presentations/defense.pdf">Slides</a>, <a href="files/documents/manuscript.pdf">Manuscript</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesDefense')">Abstract</button></div>
+            <div id="slidesDefense" class="abstract" onclick="toggleVisibility('slidesDefense')">The thesis studies optimal control problems in some spaces that are not vector spaces, with a focus on the link with Hamilton-Jacobi-Bellman equations understood in the viscosity sense. The red wire is the control of a population of drivers in a traffic network. At first, we focus on a single driver, addressing the difficulty of the lack of regularity of the ambient space. We propose a framework for Cauchy-Lipschitz control problems in CAT(0) spaces, in which we are able to give sufficient conditions for the existence of an optimal control, and characterize the value function as the unique viscosity solution to a Hamilton-Jacobi-Bellman equation. Secondly, we consider a probability measure evolving on the Euclidean space, representing a population of drivers. We obtain a comparison principle that is applicable to the control of such a population, that we prove in more generality in spaces with curvature bounded from below. Thirdly, we provide a first step towards the treatment of populations evolving on networks, by proving that the squared Wasserstein distance over a network is directionally differentiable. In formulating the Hamilton-Jacobi-Bellman equation in the Wasserstein space using solely the metric structure, one needs some technical argument to use continuity equations as characteristics; this is developed in a last chapter, focussing in more details about the geometry induced by optimal transport on measures.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Zajíček's theorem: statement, proof and some consequences of a mathematical jewel</div>
+            <div class="occasion">Atelier des doctorants LMI/LMRS</div>
+            <div class="file"><a href="files/presentations/zajicek.pdf">Notes</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesZajicek')">Abstract</button></div>
+            <div id="slidesZajicek" class="abstract" onclick="toggleVisibility('slidesZajicek')">Zajíček's theorem characterizes the sets of non-differentiability of convex functions. Its statement is sharp, elegant and tremendously powerful. We provide the proof in a simple case and give some applications.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Towards a characterization of the geometric tangent cone to the Wasserstein space</div>
+            <div class="occasion">GT OT-EDP-ML Orsay</div>
+            <div class="file"><a href="files/presentations/whoswho.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesWhosWho')">Abstract</button></div>
+            <div id="slidesWhosWho" class="abstract" onclick="toggleVisibility('slidesWhosWho')">The Wasserstein space can be given a family of geometric tangent cones built from geodesics. These tangent cones form a subset of measures on the tangent bundle, and most often, a strict subset. This talk addresses the following problem: can we know if an element belongs to the tangent cone by looking at the directional derivative of the Wasserstein distance along it? We give some context around this question, the currently available results and some open developments.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Viscosity solutions of monotone PDEs in some metric spaces</div>
+            <div class="occasion">Séminaire SPOC, Institut de Mathématiques de Bourgogne</div>
+            <div class="file"><a href="files/presentations/FollowDistance.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesFollowDistance')">Abstract</button></div>
+            <div id="slidesFollowDistance" class="abstract" onclick="toggleVisibility('slidesFollowDistance')">We introduce viscosity solutions to some monotone nonlinear PDEs, and the particular case of control problems. This class of equations can be extended to some metric spaces, provided one has well-posedness of controlled dynamical systems, and a first-order calculus. We discuss the cases of CAT and CBB spaces, with a particular focus on the Wasserstein space.</div>
+        </p>
+
+        <h2>2024</h2>
+
+        <p class="slides">
+            <div class="title">Monge-Ampère: A newbie's understanding of the story of this equation</div>
+            <div class="occasion">Hexa-doctoral seminar LMI/LMRS</div>
+            <div class="file"><a href="files/presentations/MongeAmpere.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesMongeAmpere')">Abstract</button></div>
+            <div id="slidesMongeAmpere" class="abstract" onclick="toggleVisibility('slidesMongeAmpere')">We introduce the Monge-Ampère equation, its meaning, the original treatment of the Minkowski problem and its reformulation by optimal transport. This talk is an attempt for the speaker to understand this equation, and to convey to the audience its admiration for the determination of generations of mathematicians to push the limits of its well-posedness and regularity results.</div>
+        </p>
+
+
+        <p class="poster">
+            <div class="title">A relaxation theorem in CAT(0) spaces</div>
+            <div class="occasion">Italian-Japanese workshop on variational perspectives for PDEs, Pavia</div>
+            <div class="file"><a href="files/posters/Relaxation.pdf">Poster</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('posterRelaxation')">Abstract</button></div>
+            <div id="posterRelaxation" class="abstract" onclick="toggleVisibility('posterRelaxation')">In the Euclidean space, a Marchaud differential inclusion enjoys a closed set of trajectories if the images of the dynamic are convex. The aim of this poster is to present an extension of this result to CAT(0) spaces.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Swirling measures: The quotient structure of the tangent cone to the Wasserstein space 
+            </div>
+            <div class="occasion">Journée de la fédération Normandie Mathématiques</div>
+            <div class="file"><a href="files/presentations/hodge.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesHodge')">Abstract</button></div>
+            <div id="slidesHodge" class="abstract" onclick="toggleVisibility('slidesHodge')">The Wasserstein space is a metric space of measures, endowed with a distance coming from optimal transport. There is a strong consensus to draw an analogy with an ''infinite-dimensional manifold'', but the geometric objects (exponential, tangent and cotangent spaces, Christoffel symbols...) are still defined in a quite specific way, and sometimes matter of discussion. This talk presents a characterization of the tangent cone, that aims at contributing to the clarification of the aforementioned analogy.</div>
+        </p>
+
+        <p class="poster">
+            <div class="title">An Helmholtz-Hodge decomposition in the Wasserstein space</div>
+            <div class="occasion">MIIS/PSIME PhD student's day 2024</div>
+            <div class="file"><a href="files/posters/Hodge.pdf">Poster</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('posterHodge')">Abstract</button></div>
+            <div id="posterHodge" class="abstract" onclick="toggleVisibility('posterHodge')">The Helmoltz-Hodge decomposition states that any sufficiently regular vector field f is uniquely given by grad(g)+h, where h is divergence-free. Extensions to the L² setting are known since the early 1960’s, and rely on the Hilbertian geometry of vector fields. This poster presents an extension of these results whenever the f to be decomposed is no longer a vector field, but a measure field, i.e. may give a probability to different vectors at each point. The recent development of the Wasserstein geometry provides the correct generalization of the L² setting. It is shown that any measure fields decomposes in an unique way in two components that are orthogonal in some sense, and support the same gradient/divergence-free interpretation. However, some properties are lost with respect to the vector field setting: to a pair (g,h) might correspond several f, and Pythagoras fails.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Think horizontally: Control problems with possibly infinite cost in the Wasserstein space
+            </div>
+            <div class="occasion">LMJL Seminar, Nantes</div>
+            <div class="file"><a href="files/presentations/thinkHorizontally.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesthinkHorizontally')">Abstract</button></div>
+            <div id="slidesthinkHorizontally" class="abstract" onclick="toggleVisibility('slidesthinkHorizontally')">A population can be represented as a sum of individuals or as a continuum. Both approaches are unified if one uses probability measures, which are a very convenient tool when endowed with the Wasserstein distance. In this setting, one can study control problems over the dynamic of the population by using roughly the same tools as in classical Euclidean spaces. We present one of such extensions, namely the characterization of the value function of a control problem as the minimal viscosity supersolution of a Hamilton-Jacobi equation.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Measures are fun: Introduction to the Wasserstein distance and its geometry
+            </div>
+            <div class="occasion">LITIS Doctoral seminar, University Rouen Normandie</div>
+            <div class="file"><a href="files/presentations/introWass.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesintroWass')">Abstract</button></div>
+            <div id="slidesintroWass" class="abstract" onclick="toggleVisibility('slidesintroWass')">The space of measure can be topologized in several ways. A very physical choice is the topology induced by the Wasserstein distance, also called the Earth mover's distance. The resulting metric space is very useful in statistics and optimization but also possesses some nice geometric features. This talk will be a simple and graphical introduction to some of these aspects.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Viscosity solutions in the Wasserstein space: link between test functions and semidifferentials
+            </div>
+            <div class="occasion">SMAI MODE Days 2024</div>
+            <div class="file"><a href="files/presentations/viscWass.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesViscWass')">Abstract</button></div>
+            <div id="slidesViscWass" class="abstract" onclick="toggleVisibility('slidesViscWass')">We consider a Mayer problem posed in the space <math>&Pscr;<sub>2</sub>(&Ropf;<sup>d</sup>)</math> of probability measures with finite second moment, endowed with the Wasserstein distance. Our aim is to write a Hamilton-Jacobi-Bellman equation whose unique solution is the value function of the control problem. This type of problem usually admits nonsmooth solutions, and is treated with the theory of viscosity solutions [Crandall-Lions 1992]. <br>
+            To extend the theory of viscosity solutions to <math>&Pscr;<sub>2</sub>(&Ropf;<sup>d</sup>)</math>, several lines of investigation are open. One can use semidifferentials [Marigonda-Quincampoix 2018, Gangbo-Tudorascu 2019] or implement metric viscosity techniques in the case of Eikonal-type equations [Ambrosio-Feng 2014, Giga-Hakamuri-Nakasayu 2015]. In this talk, we follow an idea raised in [Jerhaoui 2022] and consider instead the map of directional derivatives as our elementary local approximation of a smooth function, instead of a gradient. This framework allow to define viscosity solutions using quite natural test functions, and supports a strong comparison principle while retaining the link between Hamilton-Jacobi-Bellman equations and control problems. We are interested in understanding in which case can we extend the natural equivalence between semidifferentials and test function definition, that stands in the finite-dimensional setting.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title"><math>D<sub>&mu;</sub></math> vs <math><&middot;,&middot;><sub>&mu;</sub></math>: Test functions versus semidifferentials in Wasserstein
+            </div>
+            <div class="occasion">ANR COSS meeting</div>
+            <div class="file"><a href="files/presentations/twonotions.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesTwonotions')">Abstract</button></div>
+            <div id="slidesTwonotions" class="abstract" onclick="toggleVisibility('slidesTwonotions')">We present two notions of viscosity solutions for first-order Hamilton-Jacobi equations, one using test functions that are directionally differentiable, and another one using generalized sub/superdifferentials. In the classical setting of viscosity over <math>&Ropf;<sup>d</sup></math>, it is simple to link semidifferentials to the gradients of test functions. We show that a similar equivalence holds in our nonsmooth setting, under appropriate conditions over the Hamiltonian.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Tropical heat: The eikonal equation as a (max,+) version of the Poisson equation
+            </div>
+            <div class="occasion">LMI/LMRS Doctoral seminar</div>
+            <div class="file"><a href="files/presentations/tropical.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesTropical')">Abstract</button></div>
+            <div id="slidesTropical" class="abstract" onclick="toggleVisibility('slidesTropical')">The (max,+) semialgebra relies on a particular choice of operations that belongs to the realm of idempotent analysis. In this short talk, we introduce these operations and the dialog between them and classical algebra. As an application, we give the (max,+) parallel to the heat equation.</div>
+        </p>
+
+        <h2>2023</h2>
+
+        <p class="slides">
+            <div class="title">Befriending <math>&Pscr;<sub>2</sub>(&Ropf;<sup>d</sup>)</math>: viscosity solutions of centralized control problems in measure spaces
+            </div>
+            <div class="occasion">Workshop Optimal Control and Applications, Valparaíso</div>
+            <div class="file"><a href="files/presentations/befriend.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesBefriend')">Abstract</button></div>
+            <div id="slidesBefriend" class="abstract" onclick="toggleVisibility('slidesBefriend')">We present a notion of viscosity solutions adapted to control problems in the space of probability measures over <math>&Ropf;<sup>d</sup></math>, endowed with the Wasserstein distance. The key idea is to avoid the definition of a gradient of applications going from <math>&Pscr;<sub>2</sub>(&Ropf;<sup>d</sup>)</math> to <math>&Ropf;<sup>d</sup></math>, by working directly with directional derivatives. Modulo adjustments to cope with the absence of local compactness, our definition is then very similar to the finite-dimensional case. We show that such a viscosity notion supports a strong comparison principle, and that the value function of the control problem is the unique viscosity solution of the Hamilton-Jacobi-Bellman equation associated to the control problem. This work follows and generalizes [JeanJerhaouiZidani2022], in which the underlying space is a compact manifold and the dynamic is independant of the measure. Additionally, we are able to consider weaker regularity on the terminal cost and the dynamic, and we take care to only use arguments relying on the geometry of the general tangent cone.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">(max,+): Understand Hamilton-Jacobi with Maslov processes</div>
+            <div class="occasion">Kαfεmιnαrιo (PhD student seminar of the Consortium of Universities of Valparaíso)</div>
+            <div class="file"><a href="files/presentations/maxplus.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesMaxPlus')">Abstract</button></div>
+            <div id="slidesMaxPlus" class="abstract" onclick="toggleVisibility('slidesMaxPlus')">This talk presents a short introduction to Maslov measures and their principal application, the understanding of Hamilton-Jacobi equations. We introduce the (max,+) semialgebra in an elementary way, then define Maslov measures, random variables and stochastic processes, and the class of Maslov chains. Following an article by Del Moral and Doisy, we show that the backward differential equation satisfied by the expectation of some terminal cost with respect to a Maslov chain, conditionned to the initial point, is exactly the Dynamic Programming Principle of Bellman equations. With this link, it is no surprise that HJB equations are (max,+) linear (or (min,+) linear in the classical case of a minimization).</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">El D en EDP: Estrategías para derivación en espacios de medidas</div>
+            <div class="occasion">Seminario de investigación - Universidad Técnica Federico Santa María, Valparaíso</div>
+            <div class="file">
+                <a href="files/presentations/D_en_EDP/D_en_EDP_p1.pdf">Sesión 1</a>,
+                <a href="files/presentations/D_en_EDP/D_en_EDP_p2.pdf">Sesión 2</a>, 
+                <a href="files/presentations/D_en_EDP/D_en_EDP_p3.pdf">Sesión 3</a>, 
+                <a href="files/presentations/D_en_EDP/D_en_EDP_p4.pdf">Sesión 4</a>, 
+                <a href="files/presentations/D_en_EDP/D_en_EDP_p5.pdf">Sesión 5</a>, 
+                <a href="files/presentations/D_en_EDP/D_en_EDP_p6.pdf">Sesión 6</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesCato')">Resumen</button></div>
+            <div id="slidesCato" class="abstract" onclick="toggleVisibility('slidesCato')">El espacio de Wasserstein es un espacio metrico cuyos elementos se pueden representar como funciones de conjuntos, como leyes de variables aleatorias, o como puntos sobre geodesicas. Cada interpretación tiene sus propias herramientas para definir una teoría de derivación. En estas charlas, vamos a revisar la literatura desde el caso más suave hacia el menos suave.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">The D in PDE: Strategies for first-order differentiation in the space of measures</div>
+            <div class="occasion">LMI/LMRS doctoral seminar</div>
+            <div class="file"><a href="files/presentations/catalogue.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesCata')">Abstract</button></div>
+            <div id="slidesCata" class="abstract" onclick="toggleVisibility('slidesCata')">The space of measures with finite second moment, when endowed with the Wasserstein distance, is a geodesic space but not a vector space. Therefore, building an adequate differential calculus is not straightforward, and currently subject of debate in the literature. We review the main definitions in use in the Hamilton-Jacobi and Mean Fields communities, with examples illustrating the nature of the objects and comments on the range and limitations of each point of view.</div>
+        </p>
+
+        <p class="poster">
+            <div class="title">Using optimal transport to define viscosity solutions of control problems</div>
+            <div class="occasion">Foundations of Computational Mathematics (FoCM) 2023</div>
+            <div class="file"><a href="files/posters/FoCM23.pdf">Poster</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('posterFoCM23')">Abstract</button></div>
+            <div id="posterFoCM23" class="abstract" onclick="toggleVisibility('posterFoCM23')">We consider optimal control problems over the Wasserstein space. On the one hand, there is now a stable theory of absolutely continuous curves of measures, characterized as the solutions of the continuity equation. In particular, for sufficiently regular dynamics, the trajectories enjoy a nice representation as the pushforward through the semigroup of the underlying ODE. On the other hand, control problems are naturally linked to the viscosity solutions of Hamilton-Jacobi (HJ) equations. Our aim is to contribute to the extension of the viscosity theory over the Wasserstein space. We explore the choice of a particular set of test functions, including the squared distance, that allows us to obtain a weak comparison principle and verify that the value function of the control problem is the unique Lipschitz and bounded solution of the corresponding HJ equation. In addition, this choice bears strong links with subdifferential notions of the literature.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Minimalist analysis: A Lagrangian scheme for first-order HJB equations using neural networks</div>
+            <div class="occasion">SMAI 2023</div>
+            <div class="file"><a href="files/presentations/SMAI2023.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesSMAI')">Abstract</button></div>
+            <div id="slidesSMAI" class="abstract" onclick="toggleVisibility('slidesSMAI')">We consider a deterministic control problem with finite horizon. On the one hand, the discretization of the Dynamical Programming Principle (DPP) by mesh-based methods suffers from the curse of dimensionality. On the other hand, the discretized DPP is naturally formulated as a chain of optimization problems. Following the ideas of [Huré, Pham, Bachouch and Langrené 2022] in the stochastic setting, we consider a semi-Lagrangian scheme where the value function at each time step is represented by a neural network. This scheme is applied to an obstacle problem arising from a state-constrained control problem, and some elements of analysis are given in this context. Numerical illustrations are given for dimensions between 2 and 8.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Quadratic is the new smooth: a notion of viscosity for control problems in the Wasserstein space over 
+                <math>
+                    <msup>
+                    <mi>&Ropf;</mi>
+                    <mn>d</mn>
+                    </msup>
+                </math>
+            </div>
+            <div class="occasion">GdT Optimisation & contrôle, LMI</div>
+            <div class="file"><a href="files/presentations/BPviscosity.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesQITNS')">Abstract</button></div>
+            <div id="slidesQITNS" class="abstract" onclick="toggleVisibility('slidesQITNS')">The generalization of viscosity theory to control problems over Wasserstein space is an active topic. This talk will focus on some advances in the direction of test functions. We introduce the Hamilton-Jacobi approach to control problems in a general context in order to highlight the intuition behind it, then decline it in the Wasserstein context. We discuss how to overcome two of the arising difficulties by adapting the notion of viscosity. This allows us to obtain some results of comparison and uniqueness of the solution of a suitable HJ equation.</div>
+        </p>
+
+        <p class="slides">
+            <div class="title">Ekeland: A beginner's point of view on some variational principles</div>
+            <div class="occasion">LMI/LMRS doctoral seminar</div>
+            <div class="file"><a href="files/presentations/ekeland.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesEke')">Abstract</button></div>
+            <div id="slidesEke" class="abstract" onclick="toggleVisibility('slidesEke')">The first question of optimization is whether some function admits a minimum over some space. The family of Ekeland principles adresses the question "what can we say when there is no minimum?" This talk will present the original principle and some variants in an elementary fashion, with hope to highlight the power of this elegant theory.</div>
+        </p>
+
+        <h2>2022</h2>
+
+        <p class="slides">
+            <div class="title">The simple beauty of the eikonal equation</div>
+            <div class="occasion">LMI/LMRS doctoral seminar</div>
+            <div class="file"><a href="files/presentations/eikonale.pdf">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesEik')">Abstract</button></div>
+            <div id="slidesEik" class="abstract" onclick="toggleVisibility('slidesEik')">In its simplest form, the eikonal equation reads |u’| = 1. The right notion of solution seems to be viscosity solutions, that are, in a sense, maximal. This remark opens on an analytical method of resolution very close to the spectral decomposition of linear operators, and highlights the deep connection between viscosity and control problems.</div>
+        </p>
+
+        <!-- <p class="slides">
+            <div class="title">yadda</div>
+            <div class="occasion">yadda</div>
+            <div class="file"><a href="files/presentations/yadda">Slides</a>, 
+            <button class="abstractButton" onclick="toggleVisibility('slidesYadda')">Abstract</button></div>
+            <div id="slidesYadda" class="abstract" onclick="toggleVisibility('slidesYadda')">This is the abstract</div>
+        </p> -->
+
+    </main>
+  </body>
+</html>
