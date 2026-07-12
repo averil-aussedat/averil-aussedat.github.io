@@ -22,6 +22,7 @@
     /* colors */
     --main-color: #111; /* Background */
     --light-color: #333; /* Button bars */
+    --lighter-color: #444; /* Button bars */
     --other-light-color: #19a; /* Abstract buttons */
     --link-color: #2ee;
     --text-color-dark: #b9f1f8; 
@@ -51,6 +52,10 @@ a, a:link, a:visited, a:hover, a:active {
 
 li a {
     display: block; /* make links in list be cliquable as blocks (and not just the very text of the link */
+}
+
+ul {
+    margin-top: 0.3em;
 }
 
 /* General body settings */

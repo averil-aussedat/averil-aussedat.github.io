@@ -29,3 +29,22 @@ function toggleSections() {
     }
   }
 }
+
+// expands/collapses abstract in program tables
+function toggleAbstracts(theID) {
+  var thecaret = document.getElementById(theID + 'abscaret');
+  var theabstracts = document.getElementsByClassName(theID + 'abs');
+
+  if (thecaret.style.rotate === "0deg") {
+    thecaret.style.rotate = "90deg";
+    for (const theabs of theabstracts) {
+      theabs.style['white-space'] = "unset";
+    }
+  } else {
+    thecaret.style.rotate = "0deg";
+    for (const theabs of theabstracts) {
+      theabs.style['white-space'] = "nowrap";
+      // theabs.style.white-space = "nowrap";
+    }
+  }
+}
