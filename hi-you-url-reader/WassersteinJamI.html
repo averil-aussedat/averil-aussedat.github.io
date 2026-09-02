@@ -4,6 +4,14 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../styles.css">
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: {'[+]': [['$', '$']]}
+        }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
     <title>Wasserstein Jam</title>
   </head>
 
@@ -17,7 +25,7 @@
       <div style="max-width:60em;">
         The aim of this online meeting is to gather young researchers working on different aspects of the Wasserstein space. 
         The format is thought to take advantage of being remote while trying to mitigate the cons: there will be (many) more talks than in a traditional in-person meeting, 
-        each one quite short (20 minutes) with the possibility to be light on the basics since the audience is expected to be relatively fluent with P<span style="font-size: small;">2</span>. 
+        each one quite short (20 minutes) with the possibility to be light on the basics since the audience is expected to be relatively fluent with $\mathscr{P}_2$. 
         The speakers are also welcome to drift away from a classical presentation to dwell on results that they like and wish to propagate, 
         specific difficulties or known problems that are not so obvious to the non-expert, future directions of interest...
       </div>
@@ -225,9 +233,11 @@
         <tr>
           <td>15h00 - 15h20</td>
           <td><a href="https://alessandropinzi.github.io/">Alessandro Pinzi</a> <br> Bocconi </td>
-          <td>TBA</td>
+          <td>The Wasserstein geometry of random measures through superposition principles</td>
           <td class="WJIabs">
-            TBA
+              In this talk, I will introduce the space of random measures $\mathcal{P}_p(\mathcal{P}_p(X))$, endowed with the Wasserstein-on-Wasserstein metric, where $(X, d)$ is a complete separable metric space. In this setting, we prove a metric superposition principle that will allow us to recover important geometric features of the space.
+
+              When $X$ is $\mathbb{R}^d$, we will see also the differential structure of \(\mathcal{P}_p(\mathcal{P}_p(\mathbb{R}^d))\) in analogy with the classic Wasserstein space $\mathcal{P}_p(\mathbb{R}^d)$. We show that continuity equations for laws of random measures involving the abstract concept of derivation acting on cylinder functions can be more conveniently described by suitable non-local vector fields $b:[0,T] \times \mathbb{R}^d \times \mathcal{P}_p(\mathbb{R}^d) \to \mathbb{R}^d$. In this way, we can: characterize the absolutely continuous curves on the Wasserstein-on-Wasserstein space; define and characterize its tangent bundle; prove a Benamou-Brenier-like formula; prove a superposition principle for the solutions to the standard non-local continuity equation in terms of solutions of interacting particle systems. The talk is based on a joint work with Giuseppe Savaré. 
           </td>
           <!-- <td></td> -->
         </tr>
@@ -311,7 +321,7 @@
         <tr>
           <td>17h10 - 17h30</td>
           <td><a href="https://nicolaslanzetti.github.io/">Nicolas Lanzetti</a> <br> Caltech </td>
-          <td>From <math>&Ropf;<sup>d</sup></math> to <math>P(&Ropf;<sup>d</sup>)</math> and back: the variational structure of the Wasserstein space</td>
+          <td>From $\mathbb{R}^d$ to $\mathscr{P}(\mathbb{R}^d)$ and back: the variational structure of the Wasserstein space</td>
           <td class="WJIabs">
             Working in the space of probability measures permits us to escape brittle finite-dimensional parametrizations of probability measures, and is therefore natural in a variety of applications such as machine learning and distributionally robust optimization. However, the space of probability measures is not a vector space and, thus, many classical methods available in the optimization literature (e.g., derivatives) are of little help. Thus, one typically has to resort to the abstract machinery of infinite-dimensional analysis or other ad-hoc methodologies, which are, however, not tailored to the space of probability measures, generally entail projections or require convexity-type assumptions, and break when the problem changes. In this talk, I will discuss how we can endow the Wasserstein space (i.e., the space of probability measures equipped with the Wasserstein distance) with a variational structure which enables the study of optimality conditions that (i) resemble rationales of Euclidean spaces, such as KKT conditions, and (ii) are intuitive, informative, and easy to study. Then, I will show how the optimality conditions can be applied in practical applications such as learning diffusion processes and training generative models.
           </td>
